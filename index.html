@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyClaw — 一鍵部署你的 AI 助理</title>
+  <meta name="description" content="基於 OpenClaw 開源框架，60 秒內部署專屬 AI 助理。支援 Telegram、Discord、WhatsApp，串接 Claude、GPT、Gemini。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Lato:wght@300;400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🦞</span>
+        <span class="logo-text">EasyClaw</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">功能</a>
+        <a href="#how">運作方式</a>
+        <a href="#pricing">方案</a>
+        <a href="#faq">常見問題</a>
+      </div>
+      <a href="#pricing" class="btn btn-sm">立即啟用</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">基於 OpenClaw 開源框架</div>
+      <h1 class="hero-title">
+        你的專屬 AI 助理<br>
+        <span class="hero-accent">60 秒內上線</span>
+      </h1>
+      <p class="hero-desc">
+        不需要伺服器、不需要寫程式、不需要任何技術背景。<br>
+        選擇 AI 模型、連接通訊平台，一鍵部署完成。
+      </p>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn btn-lg">開始使用</a>
+        <a href="#how" class="btn btn-lg btn-ghost">了解更多</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">12,000+</span>
+          <span class="stat-label">全球部署數</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">55+</span>
+          <span class="stat-label">支援語言</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">全天候運行</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain Points -->
+  <section class="section section-dark" id="why">
+    <div class="container">
+      <div class="section-label">為什麼你需要這個</div>
+      <h2 class="section-title">AI 不該這麼複雜</h2>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="pain-icon">🖥️</div>
+          <h3>自己架設？</h3>
+          <p>需要 Linux 伺服器、SSH 連線、Docker 環境、DNS 設定⋯⋯光是搞環境就花掉一整天。</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">💬</div>
+          <h3>只能在網頁用？</h3>
+          <p>ChatGPT 和 Claude 只能在各自的網站上使用，無法整合到你日常使用的通訊平台。</p>
+        </div>
+        <div class="pain-card">
+          <div class="pain-icon">🔌</div>
+          <h3>無法自動化？</h3>
+          <p>你需要的不只是對話。你需要 AI 幫你讀信件、整理文件、排行程、追蹤任務。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-label">核心功能</div>
+      <h2 class="section-title">一個助理，無限可能</h2>
+
+      <!-- AI Models -->
+      <div class="feature-block">
+        <h3 class="feature-subtitle">選擇你偏好的 AI 模型</h3>
+        <div class="card-row">
+          <div class="model-card">
+            <div class="model-logo">◆</div>
+            <div class="model-name">Claude</div>
+            <div class="model-by">by Anthropic</div>
+            <div class="model-desc">深度分析與長文處理的最佳選擇</div>
+          </div>
+          <div class="model-card">
+            <div class="model-logo">◉</div>
+            <div class="model-name">GPT</div>
+            <div class="model-by">by OpenAI</div>
+            <div class="model-desc">全球最廣泛使用的通用 AI 模型</div>
+          </div>
+          <div class="model-card">
+            <div class="model-logo">✦</div>
+            <div class="model-name">Gemini</div>
+            <div class="model-by">by Google</div>
+            <div class="model-desc">多模態能力與即時資訊的首選</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Channels -->
+      <div class="feature-block">
+        <h3 class="feature-subtitle">連接你慣用的通訊平台</h3>
+        <div class="channel-row">
+          <div class="channel-chip active">
+            <span>Telegram</span>
+          </div>
+          <div class="channel-chip active">
+            <span>Discord</span>
+          </div>
+          <div class="channel-chip active">
+            <span>WhatsApp</span>
+          </div>
+          <div class="channel-chip active">
+            <span>Slack</span>
+          </div>
+          <div class="channel-chip">
+            <span>LINE</span>
+            <span class="chip-badge">即將推出</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Use Cases -->
+      <div class="feature-block">
+        <h3 class="feature-subtitle">你可以讓它做什麼</h3>
+        <div class="usecase-grid">
+          <div class="usecase-item">
+            <span class="usecase-icon">📧</span>
+            <span>Email 摘要</span>
+          </div>
+          <div class="usecase-item">
+            <span class="usecase-icon">📄</span>
+            <span>文件處理</span>
+          </div>
+          <div class="usecase-item">
+            <span class="usecase-icon">📅</span>
+            <span>行程安排</span>
+          </div>
+          <div class="usecase-item">
+            <span class="usecase-icon">💰</span>
+            <span>記帳追蹤</span>
+          </div>
+          <div class="usecase-item">
+            <span class="usecase-icon">🔍</span>
+            <span>資料搜集</span>
+          </div>
+          <div class="usecase-item">
+            <span class="usecase-icon">✍️</span>
+            <span>社群貼文</span>
+          </div>
+          <div class="usecase-item">
+            <span class="usecase-icon">🌐</span>
+            <span>即時翻譯</span>
+          </div>
+          <div class="usecase-item">
+            <span class="usecase-icon">🤖</span>
+            <span>自訂任務</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section section-dark" id="how">
+    <div class="container">
+      <div class="section-label">運作方式</div>
+      <h2 class="section-title">三個步驟，開始使用</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>選擇方案</h3>
+          <p>依照你的需求選擇適合的方案，完成付費後立即啟用。</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>設定連接</h3>
+          <p>透過簡單的 Web 介面，連接你的 AI 模型與通訊平台。</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>開始對話</h3>
+          <p>在你的 Telegram、Discord 或 WhatsApp 上直接使用 AI 助理。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label">比較</div>
+      <h2 class="section-title">為什麼選擇 EasyClaw</h2>
+      <div class="compare-table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>自己架設</th>
+              <th class="highlight">EasyClaw</th>
+              <th>其他平台</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>部署時間</td>
+              <td>數小時~數天</td>
+              <td class="highlight">60 秒</td>
+              <td>數分鐘</td>
+            </tr>
+            <tr>
+              <td>技術門檻</td>
+              <td>需要 Linux 經驗</td>
+              <td class="highlight">零技術要求</td>
+              <td>需基礎知識</td>
+            </tr>
+            <tr>
+              <td>伺服器維護</td>
+              <td>自己處理</td>
+              <td class="highlight">我們處理</td>
+              <td>部分處理</td>
+            </tr>
+            <tr>
+              <td>AI 模型選擇</td>
+              <td>任意</td>
+              <td class="highlight">Claude / GPT / Gemini</td>
+              <td>受限</td>
+            </tr>
+            <tr>
+              <td>通訊平台</td>
+              <td>自行設定</td>
+              <td class="highlight">一鍵連接</td>
+              <td>有限支援</td>
+            </tr>
+            <tr>
+              <td>繁體中文支援</td>
+              <td>—</td>
+              <td class="highlight">完整支援</td>
+              <td>—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section section-dark" id="pricing">
+    <div class="container">
+      <div class="section-label">方案與定價</div>
+      <h2 class="section-title">簡單透明的定價</h2>
+      <p class="section-desc">所有方案皆包含完整功能。你只需要自備 AI 模型的 API Key。</p>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="price-tier">入門方案</div>
+          <div class="price-amount">
+            <span class="price-currency">NT$</span>
+            <span class="price-num">499</span>
+            <span class="price-period">/月</span>
+          </div>
+          <ul class="price-features">
+            <li>1 個 OpenClaw 實例</li>
+            <li>1 個通訊平台連接</li>
+            <li>共享運算資源</li>
+            <li>Email 技術支援</li>
+            <li>自動更新</li>
+          </ul>
+          <a href="#" class="btn btn-full" id="btn-starter">立即啟用</a>
+        </div>
+
+        <div class="price-card featured">
+          <div class="price-badge">最受歡迎</div>
+          <div class="price-tier">專業方案</div>
+          <div class="price-amount">
+            <span class="price-currency">NT$</span>
+            <span class="price-num">999</span>
+            <span class="price-period">/月</span>
+          </div>
+          <ul class="price-features">
+            <li>1 個 OpenClaw 實例</li>
+            <li>無限通訊平台連接</li>
+            <li>專屬運算資源</li>
+            <li>優先技術支援</li>
+            <li>自動更新與備份</li>
+            <li>自訂指令與 Prompt</li>
+          </ul>
+          <a href="#" class="btn btn-full btn-accent" id="btn-pro">立即啟用</a>
+        </div>
+      </div>
+
+      <p class="pricing-note">
+        * AI 模型的 API 費用由你直接支付給模型提供商（Anthropic、OpenAI 或 Google）。<br>
+        * 我們提供 7 天無條件退款保證。
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container container-narrow">
+      <div class="section-label">常見問題</div>
+      <h2 class="section-title">FAQ</h2>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>什麼是 OpenClaw？</summary>
+          <p>OpenClaw 是一個開源的 AI 助理框架，在 GitHub 上擁有超過 145,000 顆星。它能讓 AI 模型連接到你的通訊平台（Telegram、Discord、WhatsApp 等），成為你的 24/7 私人助理。EasyClaw 幫你省去所有技術設定，一鍵部署完成。</p>
+        </details>
+        <details class="faq-item">
+          <summary>我需要自己的 AI API Key 嗎？</summary>
+          <p>是的。你需要從 Anthropic（Claude）、OpenAI（GPT）或 Google（Gemini）取得 API Key。這確保你完全掌控自己的 AI 使用量和費用。我們的 Web 介面會引導你完成設定。</p>
+        </details>
+        <details class="faq-item">
+          <summary>AI API 大概要花多少錢？</summary>
+          <p>取決於使用量。一般個人使用，每月 AI API 費用約 $5-30 美元。你可以在模型提供商的後台設定用量上限來控制花費。</p>
+        </details>
+        <details class="faq-item">
+          <summary>支援哪些通訊平台？</summary>
+          <p>目前支援 Telegram、Discord、WhatsApp、Slack、Google Chat、Signal、Microsoft Teams 等。LINE 支援即將推出。</p>
+        </details>
+        <details class="faq-item">
+          <summary>我可以自訂 AI 助理的行為嗎？</summary>
+          <p>可以。你可以透過 Web 介面設定自訂 Prompt、指定 AI 的角色與行為，甚至連接外部工具和 API。專業方案提供更多自訂選項。</p>
+        </details>
+        <details class="faq-item">
+          <summary>資料安全嗎？</summary>
+          <p>你的 OpenClaw 實例是完全獨立的，資料不與其他用戶共享。所有通訊都透過加密連線傳輸。你的 API Key 僅存儲在你的專屬實例中。</p>
+        </details>
+        <details class="faq-item">
+          <summary>可以退款嗎？</summary>
+          <p>可以。我們提供 7 天無條件退款保證。如果不滿意，聯繫我們即可全額退款。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-cta">
+    <div class="container">
+      <h2 class="cta-title">準備好讓 AI 為你工作了嗎？</h2>
+      <p class="cta-desc">加入超過 12,000 位用戶，體驗真正的 AI 助理。</p>
+      <a href="#pricing" class="btn btn-lg">立即開始</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">🦞</span>
+        <span class="logo-text">EasyClaw</span>
+        <p class="footer-tagline">讓 AI 回歸簡單</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>產品</h4>
+          <a href="#features">功能</a>
+          <a href="#pricing">定價</a>
+          <a href="#faq">常見問題</a>
+        </div>
+        <div class="footer-col">
+          <h4>資源</h4>
+          <a href="https://github.com/openclaw/openclaw" target="_blank">OpenClaw GitHub</a>
+          <a href="https://docs.openclaw.ai" target="_blank">技術文件</a>
+        </div>
+        <div class="footer-col">
+          <h4>聯繫</h4>
+          <a href="mailto:hello@ohya.co">hello@ohya.co</a>
+          <a href="https://ohya.co" target="_blank">ohya.co</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 EasyClaw by <a href="https://ohya.co" target="_blank">OHYA</a>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
